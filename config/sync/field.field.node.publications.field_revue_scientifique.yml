@@ -1,0 +1,29 @@
+uuid: 72585051-a841-4c81-adc5-068e7aa848c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_revue_scientifique
+    - node.type.publications
+    - taxonomy.vocabulary.revue_scientifique
+id: node.publications.field_revue_scientifique
+field_name: field_revue_scientifique
+entity_type: node
+bundle: publications
+label: 'Revue scientifique'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      revue_scientifique: revue_scientifique
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

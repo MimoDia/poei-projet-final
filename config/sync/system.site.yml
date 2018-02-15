@@ -1,0 +1,14 @@
+uuid: 93ff3f59-ac69-461e-bf29-117d78c87873
+name: BurkiSen
+mail: poeigp3_2@yahoo.fr
+slogan: 'Lux Mea Lex '
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

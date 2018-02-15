@@ -1,0 +1,22 @@
+uuid: 6edf8865-09d0-4ae3-aabd-990a90ddab75
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ven
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: ven_local_tasks
+theme: ven
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

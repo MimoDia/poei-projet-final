@@ -1,0 +1,48 @@
+<?php 
+
+// Chemin qui nous ramen vers le contrilleur de base
+use Drupal\Core\Entity\EntityManager;
+use Drupal\Core\Entity\EntityInterface;
+
+use Drupal\block\Entity\Block; // pour pouvoir utiliser un bloc
+
+/***
+implemente hook_user_login
+*/
+function moyenne_user_login($account){
+//kint($account);
+//die(); // pour eviter de retomber automatiquement dans la page daccueil
+//drupal_set_message(t('Bonjour'),$account->get_current_user(oid),'success');
+// getAccountName()
+drupal_set_message(t('Hello and Welcome dear %name !' , array('%name' => $account->getAccountName() ) ) );
+
+
+//drupal_set_message('Bonjour et bienvenue !' .$account->getAccountName());
+}
+
+// user_log et user_logout sont des hook qui doivent etre fai dans ce fichier
+
+function moyennecachedestructeur_user_logout($account){
+	\Drupal::service('cache_tags.invalidator')->invalidateTags(['ma_session']);
+}
+
+function moyennecachedestructeur_user_login($account){
+	\Drupal::service('cache_tags.invalidator')->invalidateTags(['ma_session']);
+}
+
+		// attachement de la librarie hello
+	 function moyenne_page_attachments(array &$page){
+		 $page['#attached']['library'][]= 'moyenne/moyenne'; // le 2 hello est le nom de la librarie moyenne.libraries.yml
+	}
+
+// // exemple de hook qui insert les donnees dun node en BD (hook a remplacer par le nom du module)
+// function hook_node_insert(Drupal|Core|Entity|EntityInterface $node) {
+//   db_insert('mytable')
+//     ->fields(array(
+//     'nid' => $node->id(), 
+//     'extra' => $node->extra,
+//   ))
+//     ->execute();
+// }
+
+

@@ -1,0 +1,28 @@
+uuid: 974b0b94-18a2-48e0-80b1-accafa2d5013
+langcode: en
+status: true
+dependencies: {  }
+id: chef_departement
+label: 'Chef département'
+weight: 4
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'administer comment types'
+  - 'administer users'
+  - 'cancel account'
+  - 'change own username'
+  - 'create article content'
+  - 'create offre_d_emploi content'
+  - 'create publications content'
+  - 'create salle content'
+  - 'delete own article content'
+  - 'delete own offre_d_emploi content'
+  - 'delete own publications content'
+  - 'delete own salle content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own offre_d_emploi content'
+  - 'edit own page content'
+  - 'edit own publications content'
+  - 'edit own salle content'

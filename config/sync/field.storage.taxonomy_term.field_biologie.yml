@@ -1,0 +1,20 @@
+uuid: 5db21df4-91ec-4739-bfd9-2ff4e5362f1b
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_biologie
+field_name: field_biologie
+entity_type: taxonomy_term
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

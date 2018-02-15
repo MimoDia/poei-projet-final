@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ language.language }}" version="XHTML+RDFa 1.0" dir="{{ language.dir }}"
+{{ rdf_namespaces }}>
+
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+  </head>
+	<!--[if lt IE 7 ]> <body class="marinelli ie6 {{ classes }}"> <![endif]-->
+    <!--[if IE 7 ]>    <body class="marinelli ie7 {{ classes }}"> <![endif]-->
+    <!--[if IE 8 ]>    <body class="marinelli ie8 {{ classes }}"> <![endif]-->
+    <!--[if IE 9 ]>    <body class="marinelli ie9 {{ classes }}"> <![endif]-->
+    <!--[if gt IE 9]>  <body class="marinelli {{ classes }}"> <![endif]-->
+    <!--[if !IE]><!--> <body class="marinelli {{ classes }}"> <!--<![endif]-->
+{# 	  <div id="skip-link">
+	    <a href="#content" title="{{ 'Jump to the main content of this page'|t }}" class="element-invisible">{{ 'Jump to Content'|t }}</a>
+	  </div> #}
+	  {{ page_top }}
+	  {{ page }}
+	  {{ page_bottom }}
+	</body><!--end body-->
+</html>

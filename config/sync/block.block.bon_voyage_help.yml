@@ -1,0 +1,22 @@
+uuid: f5a3ecb6-b828-48a7-b062-e5ddd31c63c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bon_voyage
+_core:
+  default_config_hash: a5c1fd7ZrgG1wOOwtgQvZeeUlm5ZaVqw4vloLZL5pcw
+id: bon_voyage_help
+theme: bon_voyage
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

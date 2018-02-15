@@ -1,0 +1,41 @@
+h1, h2, h3, h4, h5, h6,
+.title, .heading,
+#block-ven-branding a {
+    font-family: 'Slabo 13px', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: normal;
+}
+
+body {
+    margin: 0;
+    background: #f0f0f0;
+    font-family: 'Maven Pro', serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.fa {
+    color: #16a085;
+}
+
+a {
+    color: #3e3e3e;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: #16a085;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}

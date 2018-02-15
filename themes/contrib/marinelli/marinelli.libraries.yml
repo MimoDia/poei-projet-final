@@ -1,0 +1,69 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/common.css: {}
+      css/links.css: {}
+      css/typography.css: {}
+      css/forms.css: {}
+      css/drupal.css: {}
+      css/layout.css: {}
+      css/primary-links.css: {}
+      css/slideshow.css: {}
+      css/secondary-links.css: {}
+      css/blocks.css: {}
+      css/node.css: {}
+      css/comments.css: {}
+      css/pages/maintenance-page.css: {}
+      # css/grid/grid_1000.css: {}
+      # css/print/print.css: { media: print }
+
+global-marinelli-scripts:
+  js:
+    js/marinelli_marinelli.js: {}
+    js/topregion/marinelli_topregion.js: {}
+  dependencies:
+    - core/jquery
+
+grid-1000:
+  css:
+    theme:
+      css/grid/grid_1000.css: {}
+
+grid-960:
+  css:
+    theme:
+      css/grid/grid_960.css: {}
+
+# css3:
+#   css:
+#     theme:
+#       css/css3/css3.css: {}
+
+# css3-fonts:
+#   css/css3_fonts.css: {}
+
+# css3-graphics:
+#   css:
+#     theme:
+#       css/css3_graphics.css: {}
+
+marinelli-menu-js:
+  js:
+    js/menu/marinelli_menu.js: {}
+  dependencies:
+    - core/jquery
+
+# marinelli-banner-text-js:
+#   js:
+#     js/marinelli_banner_text.js: {}
+#   dependencies:
+#     - core/jquery
+
+# marinelli-banner-cycle-js:
+#   js:
+#     js/marinelli_configure_cycle.js: {}
+#   dependencies:
+#     - core/jquery
+
+

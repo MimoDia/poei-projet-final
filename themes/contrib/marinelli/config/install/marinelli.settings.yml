@@ -1,0 +1,50 @@
+bartext: 'Slide Down'
+bartext2: 'Slide Up'
+breadcrumb_title: 1
+breadcrumb_title_length: 50
+layout_width: 1
+layout_type: 1
+blocks: 2
+outside_tags: 0
+title_tags: 0
+css: 1
+css_typo: 1
+sticky_text: 'Sticky'
+menu_type: 1
+menu_element: 'main-menu'
+menu_alt_class: 0
+menu_headings: 1
+banner_usage: 1
+banner_type: 0
+banner_effect: 'fade'
+banner_speed: 1000
+banner_delay: 4000
+banner_pause: 1
+banner_showtext: 1
+banner_shownavigation: 1
+theme_marinelli_first_install: TRUE
+topRegion: ''
+layout_type_twig: ''
+context_class: ''
+wrapper_class: ''
+sidebar_class1: ''
+sidebar_class1: ''
+exception: ''
+
+# default_banners:
+# - image_path: 'img/advertise/1.jpg'
+#   image_title: 'Title for Images 1'
+#   images_description: 'Description for image 1'
+#   image_published: TRUE
+# - image_path: 'img/advertise/2.jpg'
+#   image_title: 'Title for Images 2'
+#   images_description: 'Description for image 2'
+#   image_published: TRUE
+# - image_path: 'img/advertise/3.jpg'
+#   image_title: 'Title for Images 3'
+#   images_description: 'Description for image 3'
+#   image_published: TRUE
+# - image_path: 'img/advertise/4.jpg'
+#   image_title: 'Title for Images 4'
+#   images_description: 'Description for image 4'
+#   image_published: TRUE

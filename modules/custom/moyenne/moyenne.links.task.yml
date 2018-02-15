@@ -1,0 +1,29 @@
+# hello.hello:
+#  title: 'coucou'
+#  route_name: hello.hello # nomdumodule.nomdelaroute (route name)
+#  base_route: hello.hello
+#  weight: 1
+
+# hello.listenode:
+#  title: 'Node list'
+#  route_name: hello.listenode # nomdumodule.nomdelaroute (route name)
+#  base_route: hello.hello
+#  weight: 2
+
+# hello.history: # ne doit pas correspondre dans ce cas des onglets (comme ceux au meme niveau que devel), au nom de la route: hello.historyUpdate:
+#  title: 'Udapte history'
+#  route_name: hello.historyUpdate # nomdumodule.nomdelaroute (route name)
+#  base_route: entity.node.canonical
+#  weight: 2
+
+# hello.monformulaire:  # ne doit pas correspondre dans ce cas des onglets (comme ceux au meme niveau que devel), au nom de la route: hello.historyUpdate:
+#  title: 'Calculator'
+#  route_name: hello.form  # nomdumodule.nomdelaroute (route name)
+#  base_route: hello.hello
+#  weight: 1
+
+# hello.monblocadmincolor:  # ne doit pas correspondre dans ce cas des onglets (comme ceux au meme niveau que devel), au nom de la route: hello.historyUpdate:
+#  title: 'Bloc color'
+#  route_name: hello.blockcolor  # nomdumodule.nomdelaroute (route name)
+#  base_route: system.themes_page
+#  weight: 2

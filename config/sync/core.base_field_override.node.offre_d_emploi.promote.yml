@@ -1,0 +1,22 @@
+uuid: 55d84fbb-e351-4a83-a294-2514a9810c28
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.offre_d_emploi
+id: node.offre_d_emploi.promote
+field_name: promote
+entity_type: node
+bundle: offre_d_emploi
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,41 @@
+{# /* maintenance page */#}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ language.language }}" lang="{{ language.language }}" dir="{{ language.dir }}">
+<head>
+  {{ head }}
+  <title>{{ head_title }}</title>
+  {{ styles }}
+</head>
+<body class="{{ classes }}" id="maintenance-page">
+	<div id="maintenance-page-container">
+		<div id="maintenance-page-left">
+			<div class="maintenance-page-panel">
+			{# /* print the login form */#}
+					
+					{# PHP:$login = drupal_get_form("user_login");#}
+					{# PHP:unset($login['openid_links']);#} {#// remove openid links
+#}					{# PHP:unset($login['openid_identifier']);#}{#// remove openid option
+#}					{# PHP:print drupal_render($login);
+			#}
+			</div>
+		</div><!--end left-->
+		<div id="maintenance-page-right">
+			<div class="maintenance-page-panel">
+				{% if site_name  %}
+				<h1>{{ site_name }}</h1>
+				{% endif %}
+				{% if site_slogan  %}
+				<h2>{{ site_slogan }}</h2>
+				{% endif %}
+        		{% if title  %}<h3>{{ title }}</h3>{% endif %}
+        		{{ content }}
+       			{% if messages  %}
+				{{ messages }}
+				{% endif %}
+			</div>
+		</div><!--end right-->
+	</div><!--end container-->
+</body>
+</html>

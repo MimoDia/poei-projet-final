@@ -1,0 +1,16 @@
+name: BAT Facets
+type: module
+description: Facet API facets for BAT.
+# core: 8.x
+package: bat
+
+dependencies:
+  - bat_event
+  - search_api
+  - facets
+
+# Information added by Drupal.org packaging script on 2017-11-28
+version: '8.x-1.0-beta4'
+core: '8.x'
+project: 'bat'
+datestamp: 1511904801

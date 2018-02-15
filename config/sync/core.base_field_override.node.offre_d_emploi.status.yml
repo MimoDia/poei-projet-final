@@ -1,0 +1,22 @@
+uuid: 10f41741-cb5b-4bf9-b472-38951f8b88d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.offre_d_emploi
+id: node.offre_d_emploi.status
+field_name: status
+entity_type: node
+bundle: offre_d_emploi
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

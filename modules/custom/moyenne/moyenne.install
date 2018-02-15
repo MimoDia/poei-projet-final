@@ -1,0 +1,67 @@
+<?php
+/** @file ...*/
+/**
+*Implements hook_schema().
+*/
+
+function moyenne_schema(){
+	$schema['moyenne_generale_secretariat_bis']= array(
+	'description' => 'Table enregistrement moyenne etudiant.',	
+	'fields' => array(
+		'id' => array(
+			'type'     => 'serial',
+			'not null' => 'TRUE', 
+		),
+		'moyenne_totale' => array(
+			'type'     => 'int',
+			'not null' => 'TRUE', 
+			'unsigned' => 'TRUE',
+		),	
+		'date' => array(
+			'type'     => 'int',
+			'unsigned' => 'TRUE',
+			'not null' => 'TRUE', 
+		),
+
+			'nom' => array(
+			'type' => 'varchar', 
+			'default' => '',
+		),	
+			'prenom' => array(
+			'type' => 'varchar',
+ 
+		),		
+			'email' => array(
+			'type'     => 'varchar',
+			'default' => '',
+		),
+			'naissance_annee' => array(
+			'type'     => 'int',
+			'not null' => 'TRUE', 
+		),	
+			'licence' => array(
+			'type' => 'textfield', 
+			'default' => '',
+		),	
+
+	'primary key' => array('id'),
+	)
+	);
+return	$schema;
+}
+
+
+
+// CREATE TABLE `moyenne_generale_secretariat` (
+//   `id` int(11) NOT NULL,
+//   `date` int(50) NOT NULL,
+//   `nom` text NOT NULL,
+//   `prenom` text NOT NULL,
+//   `moyenne_totale` int(11) NOT NULL,
+//   `naissance_annee` int(4) NOT NULL,
+//   `licence` text NOT NULL
+// ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+

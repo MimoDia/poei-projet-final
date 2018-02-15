@@ -1,0 +1,9 @@
+uuid: 3b85f66b-d190-438b-b62e-8a5eea914b5b
+langcode: en
+status: true
+dependencies: {  }
+name: Grade
+vid: grade
+description: 'grade des enseignats'
+hierarchy: 0
+weight: 0

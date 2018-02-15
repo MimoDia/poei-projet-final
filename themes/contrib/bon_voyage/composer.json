@@ -1,0 +1,16 @@
+{
+  "name": "drupal/bon_voyage",
+  "description": "Bon Voyage is a beautifully designed Drupal 8 Theme best suited for travel agencies, hotels, spas, and other travel-related online resources.",
+  "type": "drupal-theme",
+  "license": "GPL-2.0+",
+  "keywords": ["drupal", "theme", "twig"],
+  "homepage": "https://www.drupal.org/sandbox/webtitan/2662716",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Alexander S.",
+      "email": "alex@saengo.com"
+    }
+  ],
+  "require": { }
+}

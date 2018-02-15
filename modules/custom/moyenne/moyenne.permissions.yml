@@ -1,0 +1,5 @@
+ChefDepartementPermissionCalculatriceformualaire MoyenneGeneraleEtudiant:
+ title: 'Permission calcul moyenne generale par le chef departement'
+ description: 'Seuls le chef de departement peut calculer la moyenne generale des étudiants'
+ restrict access: 'true'
+

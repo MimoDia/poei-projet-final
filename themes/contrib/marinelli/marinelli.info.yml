@@ -1,0 +1,40 @@
+name: marinelli
+description: 'New Drupal 8 Twig Theme created with the help of Twigify.'
+# core: 8.x
+engine: twig
+type: theme
+regions:
+  topbar: 'Topbar'
+  utility_top: 'Utility Menu (top)'
+  utility_bottom: 'Utility Menu (Bottom)'
+  secondary_menu: 'Secondary Menu Block'
+  search: 'Search Region'
+  advertise: 'Advertise'
+  overcontent: 'Over Content'
+  overnode: 'Over Node'
+  highlight: 'Highlight'
+  content: 'Content'
+  undernode: 'Under Node'
+  sidebar_first: 'First Sidebar'
+  sidebar_second: 'Second Sidebar'
+  oversidebars: 'Over Sidebars'
+  undersidebars: 'Under Sidebars'
+  undercontent: 'Under Content'
+  footer: 'Footer'
+
+libraries:
+  - marinelli/global-styling
+  - marinelli/global-marinelli-scripts
+  - core/nomalize
+
+# Information added by Drupal.org packaging script on 2017-12-19
+# version: '8.x-1.x-dev'
+# core: '8.x'
+# project: 'marinelli'
+# datestamp: 1513677787
+
+# Information added by Drupal.org packaging script on 2018-01-16
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'marinelli'
+datestamp: 1516086788

@@ -1,0 +1,20 @@
+uuid: 2448c8be-2297-4be1-8775-3b2ef6ac12d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_type_de_contrat
+field_name: field_type_de_contrat
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

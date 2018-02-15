@@ -1,0 +1,30 @@
+uuid: 9b655473-f12b-4d7a-9aec-a8807c046f04
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.offres_d_emploi
+  module:
+    - system
+    - views
+  theme:
+    - ven
+id: ven_views_block__offres_d_emploi_block_1
+theme: ven
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:offres_d_emploi-block_1'
+settings:
+  id: 'views_block:offres_d_emploi-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

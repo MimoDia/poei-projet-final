@@ -1,0 +1,31 @@
+{#
+/**
+ *  $blockhide hides title in blocks (see marinelli_preprocess_block in template.php and theme settings)
+ *  $blocktag decides the tag to use for the block title (see theme settings)
+ */#}
+{# <div id="block-PHP: print $block->module . '-' . $block->delta;" class="{{ blockhide }}{{ classes }}"{{ attributes }}> #}
+ {#  {{ title_prefix }}
+  {% if block is not empty %}
+    <div class="block-title">
+      <{{ blocktag }} class="title"{{ title_attributes }}>{{ block }}</{{ blocktag }}>
+    </div>
+  {% endif %}
+  {{ title_suffix }}
+  <div class="content">
+    {{ content }}
+  </div> #}
+{# </div> <!-- /block --> #}
+
+<div{{ attributes.addClass('block') }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  <div{{ content_attributes }}>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+</div>

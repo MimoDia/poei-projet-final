@@ -1,0 +1,22 @@
+uuid: e877a0eb-454a-4b19-b2bc-97d4386a00ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ven
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: ven_breadcrumbs
+theme: ven
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

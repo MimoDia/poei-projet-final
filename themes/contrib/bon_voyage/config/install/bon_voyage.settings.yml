@@ -1,0 +1,11 @@
+features:
+   comment_user_picture: true
+   comment_user_verification: true
+   favicon: true
+   logo: true
+   name: false
+   node_user_picture: true
+   slogan: false
+to_top_display: 1
+use_stick_up_menu: 1
+show_breadcrumb_title: 1

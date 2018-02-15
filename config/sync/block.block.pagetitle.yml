@@ -1,0 +1,27 @@
+uuid: c5601993-8493-4911-b4a7-27fc6370f1f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bon_voyage
+_core:
+  default_config_hash: qrxrPkedlKHoiDtDe2ltYCadI7ThiB_CHRs3ysSTkm8
+id: pagetitle
+theme: bon_voyage
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,9 @@
+uuid: 0a1fb3cc-d7a0-4c0c-acb7-48b38b2ca368
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type de contrat'
+vid: type_de_contrat
+description: ''
+hierarchy: 0
+weight: 0

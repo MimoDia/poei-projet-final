@@ -1,0 +1,30 @@
+uuid: 8e1558af-cbc9-4798-983b-2471c7ec1e1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slideshow_accueil
+  module:
+    - system
+    - views
+  theme:
+    - marinelli
+id: marinelli_views_block__slideshow_accueil_block_1
+theme: marinelli
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:slideshow_accueil-block_1'
+settings:
+  id: 'views_block:slideshow_accueil-block_1'
+  label: 'Bienvenu à l''Université BurkSen'
+  provider: views
+  label_display: '0'
+  views_label: 'Bienvenu à l''Université BurkSen'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

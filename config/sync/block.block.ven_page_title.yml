@@ -1,0 +1,20 @@
+uuid: 8eee789b-d0e3-46a7-b601-781da8e6dde4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ven
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: ven_page_title
+theme: ven
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Title
+  provider: core
+  label_display: '0'
+visibility: {  }

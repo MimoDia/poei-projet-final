@@ -1,0 +1,24 @@
+uuid: 748c4a8f-b10e-481a-b9cd-6b48c0070408
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.actualites
+  module:
+    - views
+  theme:
+    - marinelli
+id: marinelli_views_block__actualites_block_1
+theme: marinelli
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:actualites-block_1'
+settings:
+  id: 'views_block:actualites-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

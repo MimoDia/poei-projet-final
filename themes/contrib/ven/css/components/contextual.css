@@ -1,0 +1,44 @@
+/* breadcrumb and contextual links */
+#block-ven-breadcrumbs,
+#block-ven-local-tasks {
+    margin: 0 0 10px;
+    background: #fff;
+    padding: 10px;
+}
+#block-ven-breadcrumbs nav ol,
+#block-ven-local-tasks ul {
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+    padding-left: 0;
+}
+#block-ven-breadcrumbs nav ol li,
+#block-ven-local-tasks ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+#block-ven-local-tasks ul li:after {
+    content: "-";
+    margin-left: 5px;
+    color: #16a085;
+}
+#block-ven-breadcrumbs nav ol li:after {
+    content: ">";
+    margin-left: 5px;
+    color: #16a085;
+}
+#block-ven-breadcrumbs nav ol li:last-of-type,
+#block-ven-local-tasks ul li:last-of-type {
+    margin-right: 0;
+}
+#block-ven-breadcrumbs nav ol li:last-of-type:after,
+#block-ven-local-tasks ul li:last-of-type:after {
+    content: "";
+    margin-left: 0;
+}
+#block-ven-breadcrumbs nav ol li a,
+#block-ven-local-tasks ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}

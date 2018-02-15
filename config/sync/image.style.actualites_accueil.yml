@@ -1,0 +1,14 @@
+uuid: 68d91deb-ab00-4b15-8c22-80ee8c1d91ea
+langcode: en
+status: true
+dependencies: {  }
+name: actualites_accueil
+label: Actualités-accueil
+effects:
+  67ab1237-18b4-4204-a4f9-3a3acd716b70:
+    uuid: 67ab1237-18b4-4204-a4f9-3a3acd716b70
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200

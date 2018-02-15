@@ -1,0 +1,38 @@
+uuid: 21e30506-1885-4e0f-a689-d38c09eef47a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photos_salle
+    - node.type.salle
+  module:
+    - image
+id: node.salle.field_photos_salle
+field_name: field_photos_salle
+entity_type: node
+bundle: salle
+label: Photos_salle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: photos/salles
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

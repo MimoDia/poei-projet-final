@@ -1,0 +1,200 @@
+{#
+/**
+* @file
+* Marinelli's theme implementation to display a single page.
+*
+* The doctype, html, head and body tags are not in this template. Instead they
+* can be found in the html.html.twig template normally located in the
+* path_to_marinelli/theme/templates
+*
+* @see template_preprocess_page()
+* @see html.html.twig
+*/
+#}
+{# <!--start framework container--> #}
+<div class="container_12 {{ layout_width }}" id="totalContainer">
+  {% if topRegion  %}
+    {# <!--start top section--> #}
+    <div id="top" class="outsidecontent">
+      {% if page.utility_top %}
+        {# <!--start top utility box--> #}
+        <div class="utility" id="topUtility">
+          {{ page.utility_top }}
+        </div>
+        {# <!--end top utility box--> #}
+      {% endif %}
+    </div>
+    {# <!--end top section--> #}
+  {% endif %}
+  {% if page.topbar %}
+    {# <!--start top bar--> #}
+    <div id="topBar" class="outsidecontent">
+      {% if page.search %}
+        {# <!--start search--> #}
+        <div id="search">
+          {{ page.search }}
+        </div>
+        {# <!--end search--> #}
+      {% endif %}
+      <div id="topBarContainer" class="{{ layout_width }}">
+        {{ page.topbar }}
+      </div>
+    </div>
+    {#  {% if not topregion  %}
+      <div id="topBarLink" class="outsidecontent withoutTopRegion">
+        {{page.topBarLink}}
+      </div>
+    {% endif %} #}
+  {% endif %}
+  <div id="pageBorder" {{ noborder }}>
+    {#
+    /**
+    *TODO : Header Imges Section
+    *       Secondary Menu
+    */ #}
+    {# <!-- start contentWrapper--> #}
+    {% if page.overcontent %}
+      {# <!--start overcontent--> #}
+      <div class="grid_12 outofContent" id="overContent">
+        {{ page.overcontent }}
+      </div>
+      {# <!--end overContent--> #}
+    {% endif %}
+    {# <div id="header-images" {{ (usebanner == 0 ) ? 'class="unlimited"' : ' ' }}>
+      {% if not usebanner %}
+        {{ page.advertise }}
+      {% elseif  banner_image %}
+        {{ banner_text }}
+        {{ banner_nav }}
+        {{ banner_image }}
+      {% endif %}
+    </div> #}
+
+    <div id="header-images">
+      <a href="{{ url('<front>') }}" class="active">
+        <img  src="{{ url('<front>') }}{{ directory }}/img/advertise/1.jpg" alt="Description for image 2" title="Title for image 2">
+      </a>
+
+{#         <a href="{{ url('<front>') }}" class="active">
+        <img class="slide" id="slide-number-0" longdesc="Description for image 2" typeof="foaf:Image" src="{{ app.request.getSchemeAndHttpHost() Path_to_marinelli ~ '/img/advertise/2.jpg' }}" alt="Description for image 2" title="Title for image 2">
+      </a> #}
+
+             </div>
+      {% if page.secondary_menu %}
+      <div id="navigation-secondary" class="sitemenu">
+        {{ page.secondary_menu }}
+      </div>
+    {% endif %}
+    <div id="contentWrapper">
+      {#
+      /**
+      * TODO : Bread Crum
+      */
+      #}
+      {# <!--start innercontent--> #}
+      <div id="innerContent">
+        {# <!--start main content--> #}
+        <div class="{{ context_class }}" id="siteContent">
+          {% if page.overnode %}
+            {# <!--start overnode--> #}
+            <div class="outofnode" id="overNode">
+              {{ page.overnode }}
+            </div>
+            {# <!--end over node--> #}
+          {% endif %}
+          {% if page.highlight %}
+            <div id="highlight">
+              {{ page.highlight }}
+            </div>
+          {% endif %}
+          {{ title_prefix }}
+          {% if title  %}
+            <h1 id="page-title">{{ title }}</h1>
+          {% endif %}
+          {{ title_suffix }}
+          {{ messages }}
+          {% if tabs  %}
+            <div class="tab-container">
+              {{ tabs }}
+            </div>
+          {% endif %}
+          {{ page.help }}
+          {% if action_links  %}
+          <ul class="action-links">{{ action_links }}</ul>
+        {% endif %}
+        {# <!--start drupal content--> #}
+        <div id="content">
+          {{ page.content }}
+        </div>
+        {# <!--end drupal content--> #}
+        {{ feed_icons }}
+        {% if page.undernode  %}
+          {# <!--start undernode--> #}
+          <div class="outofnode" id="underNode">
+            {{ page.undernode }}
+          </div>
+          {# <!--end under node--> #}
+        {% endif %}
+      </div>
+      {# <!--end main content--> #}
+      {% if (page.sidebar_first) or (page.sidebar_second) or ({ (layout_type_twig):options }!= 2) %}
+        <div class="{{ wrapper_class }}" id="sidebarWrapper">
+          {# <!--start oversidebars--> #}
+          {% if page.oversidebars %}
+            <div class="outofsidebars grid_6 alpha omega" id="overSidebars">
+              {{ page.oversidebars }}
+            </div>
+          {% endif %}
+          {# <!--end over sidebars--> #}
+        {% endif %}
+        {% if page.sidebar_first %}
+          {# <!--start first sidebar--> #}
+          <div class="{{ sidebar_class1 }} sidebar" id="sidebar-first">
+            {{ page.sidebar_first }}
+          </div>
+          {# <!--end first sidebar--> #}
+        {% endif %}
+        {% if page.sidebar_second %}
+          {# <!--start second sidebar--> #}
+          <div class=" {{ sidebar_class2 }} sidebar" id="sidebar-second">
+            {# <!--start second sidebar--> #}
+            {{ page.sidebar_second }}
+          </div>
+          {# <!--end second sidebar--> #}
+        {% endif %}
+        {% if (page.sidebar_first) or (page.sidebar_second) or ({ (layout_type_twig):options }!= 2) %}
+          {% if page.undersidebars  %}
+            {# <!--start undersidebars--> #}
+            <div class="outofsidebars grid_6 alpha omega" id="underSidebars">
+              {{ page.undersidebars }}
+            </div>
+            {# <!--end under sidebars--> #}
+          {% endif %}
+        </div>
+        {# <!--end sidebarWrapper--> #}
+      {% endif %}
+    </div>
+    {# <!--end innerContent--> #}
+    {% if page.undercontent  %}
+      {# <!--start underContent--> #}
+      <div class="grid_12 outofContent" id="underContent">
+        {{ page.undercontent }}
+      </div>
+      {# <!--end underContent--> #}
+    {% endif %}
+  </div>
+  {# <!--end contentWrapper--> #}
+</div>
+{# <!--close page border Wrapper--> #}
+{% if page.footer or page.utility_bottom %}
+  {# <!--start footer--> #}
+  <div id="footer" class="outsidecontent">
+    {{ page.footer }}
+    <div class="utility" id="bottomUtility">
+      {{ page.utility_bottom }}
+    </div>
+    {# <!--end bottom utility box--> #}
+  </div>
+  {# <!--end footer--> #}
+{% endif %}
+</div>

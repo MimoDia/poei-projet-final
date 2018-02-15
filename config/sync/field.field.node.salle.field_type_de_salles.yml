@@ -1,0 +1,33 @@
+uuid: 2004ee9b-a1fb-4065-a472-838dc58f54a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_de_salles
+    - node.type.salle
+    - taxonomy.vocabulary.type_de_salles
+  content:
+    - 'taxonomy_term:type_de_salles:2428740f-af42-462f-b262-9cfe2744294a'
+id: node.salle.field_type_de_salles
+field_name: field_type_de_salles
+entity_type: node
+bundle: salle
+label: 'Type de salles'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 2428740f-af42-462f-b262-9cfe2744294a
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_de_salles: type_de_salles
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: type_de_departement
+field_type: entity_reference

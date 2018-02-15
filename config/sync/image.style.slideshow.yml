@@ -1,0 +1,14 @@
+uuid: f98e6227-389a-44b0-8705-98081deaf405
+langcode: en
+status: true
+dependencies: {  }
+name: slideshow
+label: slideshow
+effects:
+  2987eae6-bf95-4bba-9428-121c27328c3f:
+    uuid: 2987eae6-bf95-4bba-9428-121c27328c3f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 450

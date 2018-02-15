@@ -1,0 +1,46 @@
+<?php
+
+/**
+* Implements hook_preprocess_block()
+*/
+function ven_preprocess_block(&$variables) {
+  $variables['attributes']['class'][] = 'content-block';
+}
+
+/**
+ * Implements hook_preprocess_node
+ */
+function ven_preprocess_node(&$variables) {
+  // Getting the node creation time stamp from the node object.
+  if($variables['node']->getType() == 'article') {
+    $variables['comment_count'] = $variables['node']->get('comment')->comment_count;
+  }
+}
+
+/**
+ * Implements hook_preprocess_field
+ */
+function ven_preprocess_field(&$variables, $hook) {
+  if($variables['element']['#bundle'] == 'article' && $variables['element']['#field_name'] == 'created') {
+    $date = $variables['element']['#items']->get(0)->getValue()['value'];
+    $d = new DateTime();
+    $d->setTimestamp($date);
+    $variables['date']['datetime_attr'] = $variables['attributes']['content'];
+    $variables['date']['month'] = $d->format('F');
+    $variables['date']['day'] = $d->format('d');
+    $variables['date']['year'] = $d->format('Y');
+  }
+}
+
+/**
+ * Implements hook_preprocess_page_title
+ */
+function ven_preprocess_page_title(&$variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if( $node && $node->getType() == 'article' ) {
+    $variables['title'] = "";
+  }
+  elseif (is_array($variables['title']) && isset($variables['title']['#markup']) && $variables['title']['#markup'] == "") {
+    $variables['title'] = "";
+  }
+}

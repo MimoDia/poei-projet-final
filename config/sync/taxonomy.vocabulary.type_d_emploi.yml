@@ -1,0 +1,9 @@
+uuid: 392d2877-c052-43d3-8abc-915918166fcc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type d''emploi'
+vid: type_d_emploi
+description: 'création du type d''emploi'
+hierarchy: 0
+weight: 0

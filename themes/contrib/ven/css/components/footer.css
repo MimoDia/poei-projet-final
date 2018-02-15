@@ -1,0 +1,27 @@
+/* footer */
+.layout-container > footer {
+    background: #3e3e3e;
+    color: #efefef;
+    text-align: center;
+    padding: 15px;
+}
+.layout-container > footer a {
+    color: #9e9e9e;
+}
+.layout-container > footer a:hover {
+    color: #16a085;
+}
+.layout-container > footer ul {
+    margin: 0 10px 10px;
+}
+.layout-container > footer ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.layout-container > footer ul li:last-of-type {
+    margin-right: 0;
+}
+.layout-container > footer ul li a {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}

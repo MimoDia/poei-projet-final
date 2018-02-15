@@ -1,0 +1,8 @@
+access reservation save:
+  title: 'Access save reservation'
+  description: 'save reservation.'
+
+
+access reservation process:
+  title: 'Access process reservation'
+  description: 'Process reservation.'

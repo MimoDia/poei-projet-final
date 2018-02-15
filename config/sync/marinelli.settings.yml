@@ -1,0 +1,33 @@
+bartext: 'Slide Down'
+bartext2: 'Slide Up'
+breadcrumb_title: 1
+breadcrumb_title_length: 50
+layout_width: 1
+layout_type: 1
+blocks: 2
+outside_tags: 0
+title_tags: 0
+css: 1
+css_typo: 1
+sticky_text: Sticky
+menu_type: 1
+menu_element: main-menu
+menu_alt_class: 0
+menu_headings: 1
+banner_usage: 1
+banner_type: 0
+banner_effect: fade
+banner_speed: 1000
+banner_delay: 4000
+banner_pause: 1
+banner_showtext: 1
+banner_shownavigation: 1
+theme_marinelli_first_install: true
+topRegion: ''
+layout_type_twig: ''
+context_class: ''
+wrapper_class: ''
+sidebar_class1: ''
+exception: ''
+_core:
+  default_config_hash: PzwFmH5tYw0gM1g8bLMJZk52i1eF0sG3fcYjAaYIgAM

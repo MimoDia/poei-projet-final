@@ -1,0 +1,29 @@
+uuid: dc2fdfe1-60de-4ede-a3b8-65b0a11aebd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_d_emploi
+    - node.type.offre_d_emploi
+    - taxonomy.vocabulary.type_d_emploi
+id: node.offre_d_emploi.field_type_d_emploi
+field_name: field_type_d_emploi
+entity_type: node
+bundle: offre_d_emploi
+label: 'Type d''emploi'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_d_emploi: type_d_emploi
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

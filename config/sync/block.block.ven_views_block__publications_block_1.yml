@@ -1,0 +1,30 @@
+uuid: 3872a5e9-ed82-4a4f-add9-a70dca9b008b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.publications
+  module:
+    - system
+    - views
+  theme:
+    - ven
+id: ven_views_block__publications_block_1
+theme: ven
+region: header
+weight: -8
+provider: null
+plugin: 'views_block:publications-block_1'
+settings:
+  id: 'views_block:publications-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

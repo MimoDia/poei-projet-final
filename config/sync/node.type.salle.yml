@@ -1,0 +1,17 @@
+uuid: b0547c54-ce87-4cb5-b3cc-e6c0f1bc179c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Salle
+type: salle
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

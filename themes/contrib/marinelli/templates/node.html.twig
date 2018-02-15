@@ -1,0 +1,40 @@
+{# // node template #}
+
+<div id="node-{{ node.id }}" class="{{ classes }}"{{ attributes }}>
+  <div class="node-container">
+    {% if display_submitted  %}
+      <div class="submitted-info">
+      {{ 'posted by'|t }}
+      <span class="node-name">{{ name }}</span>
+      {{ 'on'|t }}
+      <span class="node-date">{{ date }}</span>
+      {% if not node  %}
+        <span class="node-status-unpublished">{{ 'unpublished'|t }}</span>
+      {% endif %}
+      </div>
+    {% endif %}
+
+    {{ user_picture }}
+
+    <div class="nodecontent"{{ content_attributes }}>
+      {{ title_prefix }}
+      {% if not page  %}
+        <h2{{ title_attributes }}>
+          <a href="{{ node_url }}">{{ title }}</a>
+        </h2>
+      {% endif %}
+      {{ title_suffix }}
+      {{ content }}
+    </div>
+    {% if content  %}
+      <div class="links-container">
+        {{ content.links }}
+      </div>
+    {% endif %}
+    {% if not teaser  %}
+      <div class="clearfix">
+        {{ content.comments }}
+      </div>
+    {% endif %}
+  </div><!--end node container-->
+</div><!--end node-->

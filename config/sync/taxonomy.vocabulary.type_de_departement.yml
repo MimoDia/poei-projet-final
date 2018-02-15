@@ -1,0 +1,9 @@
+uuid: c0e68a2f-128f-4c1e-823d-ea505c18ead7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type de département'
+vid: type_de_departement
+description: ''
+hierarchy: 0
+weight: 0

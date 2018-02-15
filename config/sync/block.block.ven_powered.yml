@@ -1,0 +1,22 @@
+uuid: 99536a0c-d4eb-4838-bd15-790160c07293
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ven
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: ven_powered
+theme: ven
+region: header
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

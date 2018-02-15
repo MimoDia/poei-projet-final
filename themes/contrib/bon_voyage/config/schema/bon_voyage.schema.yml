@@ -1,0 +1,4 @@
+# Schema for the configuration files for the bon_voyage theme.
+bon_voyage.settings:
+  type: theme_settings
+  label: 'bon_voyage Settings'

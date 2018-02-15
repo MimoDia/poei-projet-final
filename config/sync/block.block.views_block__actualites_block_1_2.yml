@@ -1,0 +1,30 @@
+uuid: 2afd8336-8fe9-4e23-a184-57bb25c63f7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.actualites
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__actualites_block_1_2
+theme: bartik
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:actualites-block_1'
+settings:
+  id: 'views_block:actualites-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

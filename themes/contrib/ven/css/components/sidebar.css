@@ -1,0 +1,40 @@
+/* sidebar */
+.content-block {
+    position: relative;
+}
+aside {
+//margin-top: 20px;
+}
+aside.layout-sidebar .content-block {
+    padding: 10px;
+    background: #ffffff;
+    margin-bottom: 20px;
+}
+aside.layout-sidebar .content-block:before {
+    content: "";
+    border-top: 5px solid #16a085;
+    position: absolute;
+    width: 15%;
+    left: 0;
+    right: 0;
+    top: -5px;
+    margin: auto;
+}
+aside.layout-sidebar .content-block h2,
+details summary {
+    padding: 5px 10px;
+    background: #16a085;
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: normal;
+}
+aside.layout-sidebar .content-block h2 {
+    margin: -10px -10px 5px -10px;
+}
+aside.layout-sidebar form {
+    text-align: center;
+}
+aside.layout-sidebar form input {
+    margin-left: auto;
+    margin-right: auto;
+}

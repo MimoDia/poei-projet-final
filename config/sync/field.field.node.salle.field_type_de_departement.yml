@@ -1,0 +1,33 @@
+uuid: e539be98-3e7d-4e84-ad6b-0cbd1eedaf9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_de_departement
+    - node.type.salle
+    - taxonomy.vocabulary.type_de_departement
+  content:
+    - 'taxonomy_term:type_de_departement:a1775060-64d0-44d7-b092-7317809285ff'
+id: node.salle.field_type_de_departement
+field_name: field_type_de_departement
+entity_type: node
+bundle: salle
+label: 'Type de département'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: a1775060-64d0-44d7-b092-7317809285ff
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_de_departement: type_de_departement
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

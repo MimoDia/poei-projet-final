@@ -1,0 +1,30 @@
+uuid: 0908745c-f6a8-4642-8619-3741b9428785
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_garde
+    - taxonomy.vocabulary.grade
+  module:
+    - user
+id: user.user.field_garde
+field_name: field_garde
+entity_type: user
+bundle: user
+label: Grade
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      grade: grade
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

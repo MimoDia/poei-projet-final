@@ -1,0 +1,29 @@
+uuid: 78721460-c69c-4857-9fd2-aa06f0ec0f0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_specialite
+    - node.type.publications
+    - taxonomy.vocabulary.specialite
+id: node.publications.field_specialite
+field_name: field_specialite
+entity_type: node
+bundle: publications
+label: Spécialité
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      specialite: specialite
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

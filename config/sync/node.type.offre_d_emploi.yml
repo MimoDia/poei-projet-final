@@ -1,0 +1,17 @@
+uuid: 4dbbda5a-a0fd-46c3-99dc-eee728ecfc85
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Offre d''emploi'
+type: offre_d_emploi
+description: 'Lister les offres d''emploi'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

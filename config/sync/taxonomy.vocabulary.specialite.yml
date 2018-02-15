@@ -1,0 +1,9 @@
+uuid: 824168f7-8642-4e56-9b35-641169e3388b
+langcode: en
+status: true
+dependencies: {  }
+name: Spécialité
+vid: specialite
+description: 'Création de type spécialité'
+hierarchy: 0
+weight: 0

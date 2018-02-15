@@ -1,0 +1,30 @@
+uuid: af89bebf-0a88-4299-afe2-078bf2049944
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.actualites
+  module:
+    - system
+    - views
+  theme:
+    - marinelli
+id: marinelli_views_block__actualites_block_1_2
+theme: marinelli
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:actualites-block_1'
+settings:
+  id: 'views_block:actualites-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

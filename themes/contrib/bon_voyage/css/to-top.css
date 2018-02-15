@@ -1,0 +1,91 @@
+/**
+ * @file
+ * Styles for Back to Top button.
+ */
+
+/******************************************
+To Top button
+*******************************************/
+
+#to-top {
+  display: none;
+  width: 58px;
+  height: 58px;
+  position: fixed;
+  background: #00be93;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  margin-right: -700px !important;
+  right: 50%;
+  bottom: 100px;
+  z-index: 999;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+@media (max-width: 767px) {
+  #to-top {
+    display: none !important;
+  } }
+
+#to-top:before {
+  font-family: "FontAwesome";
+  font-size: 30px;
+  color: #fff;
+  content: "";
+  line-height: 58px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 58px;
+}
+
+#to-top:after {
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58px;
+  height: 58px;
+  border: 1px solid 100be93;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
+#to-top:hover {
+  background: #111;
+}
+#to-top:hover:after {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  border-color: #111;
+}
+
+#to-top:active,
+#to-top:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+  #to-top {
+    display: none !important;
+  }
+}

@@ -1,0 +1,14 @@
+uuid: 93e87aec-3e84-4e14-abe0-3b8d03eb4469
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.chef_departement
+  module:
+    - user
+id: user_remove_role_action.chef_departement
+label: 'Remove the Chef département role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: chef_departement

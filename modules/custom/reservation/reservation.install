@@ -1,0 +1,132 @@
+<?php
+
+
+use Drupal\Core\Database\Database;
+
+
+function reservation_schema() {
+  //// creation of table for booking
+ $schema['reservation'] = [
+   'description' => 'The base table for booking.',
+   'fields' => [
+     'bid' => [
+       'description' => 'The primary identifier for a node booking.',
+       'type' => 'serial',
+       'unsigned' => TRUE,
+       'not null' => TRUE,
+     ],
+     'nid' => [
+       'description' => 'The current room',
+       'type' => 'int',
+       'unsigned' => TRUE,
+       'not null' => TRUE,
+     ],
+     'uid' => [
+       'description' => 'The current user ID',
+       'type' => 'int',
+       'unsigned' => TRUE,
+       'not null' => TRUE,
+     ],
+     'reservation_date_start' => [
+       'description' => 'The type of start time for booking.',
+       'type' => 'int',
+       'not null' => TRUE,
+     ],
+     'reservation_date_end' => [
+       'description' => 'The type of end time for booking.',
+       'type' => 'int',
+       'not null' => TRUE,
+     ],
+   ],
+   'primary key' => ['bid'],
+    
+ ];
+ //////// history of booking ///////
+ $schema['reservation_history'] = [
+   'description' => 'The base table for booking.',
+   'fields' => [
+     'hid' => [
+       'description' => 'The primary identifier for a booking.',
+       'type' => 'serial',
+       'unsigned' => TRUE,
+       'not null' => TRUE,
+     ],
+     'nid' => [
+       'description' => 'le champ nid ',
+       'type' => 'int',
+       'unsigned' => TRUE,
+       'not null' => TRUE,
+     ],
+     'update_time' => [
+       'description' => 'The type of update time.',
+       'type' => 'int',
+       'not null' => TRUE,
+     ],
+     'reservation_date_start' => [
+       'description' => 'The type of update time.',
+       'type' => 'int',
+       'not null' => TRUE,
+     ],
+     'reservation_date_end' => [
+       'description' => 'The type of update time.',
+       'type' => 'int',
+       'not null' => TRUE,
+     ],
+      'uid' => [
+        'description' => 'user ID',
+        'type'     => 'int', 
+        'unsigned' => TRUE, 
+        'not null' => TRUE,
+      ],
+   ],
+   'primary key' => ['hid'],
+    'index' => array('nid' => array('nid')),
+ ];
+ /////// Time slots //////
+ $schema['CrenauxHoraires'] = [
+   'description' => 'The base table for time slots.',
+   'fields' => [
+     'bid' => [
+       'description' => 'The primary identifier for a node booking.',
+       'type' => 'serial',
+       'unsigned' => TRUE,
+       'not null' => TRUE,
+     ],
+     'nid' => [
+       'description' => 'The current room',
+       'type' => 'int',
+       'unsigned' => TRUE,
+       'not null' => TRUE,
+     ],
+     'date_start_crenau' => [
+       'description' => 'The type of start time slots for booking.',
+       'type' => 'int',
+       'not null' => TRUE,
+     ],
+     'date_end_crenau' => [
+       'description' => 'The type of end time slots for booking.',
+       'type' => 'int',
+       'not null' => TRUE,
+     ],
+   ],
+   'primary key' => ['bid'],
+    
+ ];
+ ///// return schema for creation of this schema /////
+ return $schema;
+}
+//*******************************//
+function reservation_install() {
+ 
+   // Create the styles directory and ensure it's writable.
+   $directory = file_default_scheme() . '://styles';
+   file_prepare_directory($directory, FILE_CREATE_DIRECTORY | FILE_MODIFY_PERMISSIONS);
+}
+//*******************************//
+function reservation_uninstall() {
+   
+   // Remove the styles directory and generated images.
+   file_unmanaged_delete_recursive(file_default_scheme() . '://styles');
+}
+
+

@@ -1,0 +1,31 @@
+global:
+  version: 1.0
+  css:
+    base:
+      css/ven.css: {}
+      css/components/article.css: {}
+      css/components/comment.css: {}
+      css/components/content.css: {}
+      css/components/contextual.css: {}
+      css/components/footer.css: {}
+      css/components/form.css: {}
+      css/components/header.css: {}
+      css/components/main-menu.css: {}
+      css/components/messages.css: {}
+      css/components/pager.css: {}
+      css/components/sidebar.css: {}
+      css/media.css: {}
+      'https://fonts.googleapis.com/css?family=Maven+Pro|Slabo+13px': { type: external }
+  js:
+    js/ven.js: {}
+
+font-awesome:
+  remote: https://fortawesome.github.io/Font-Awesome/
+  version: 4.7.0
+  license:
+    name: MIT
+    url: https://fortawesome.github.io/Font-Awesome/license/
+    gpl-compatible: true
+  css:
+    theme:
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }

@@ -1,0 +1,24 @@
+uuid: b736257c-ab8a-4b2e-9b03-3ed5d42cd109
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bon_voyage
+id: mainnavigation
+theme: bon_voyage
+region: primary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

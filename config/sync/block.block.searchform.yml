@@ -1,0 +1,22 @@
+uuid: a9dabc33-ae6e-4c24-b860-aea65f4650ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bon_voyage
+_core:
+  default_config_hash: hU6Sdo410R5jAt44lS5wGLrCiw_6VQamztIEFScRDF8
+id: searchform
+theme: bon_voyage
+region: search
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

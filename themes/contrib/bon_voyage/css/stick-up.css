@@ -1,0 +1,51 @@
+/**
+ * @file
+ * Styles for StickUp menu.
+ */
+
+nav#main-nav-container.stickUpTop {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  clear: none;
+  z-index: auto;
+}
+
+
+nav#main-nav-container.stickUpTop.isStuck {
+  z-index: 1;
+}
+
+nav#main-nav-container.stickUpHolder {
+  padding: 0;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1199px) {
+  nav#main-nav-container.isStuck .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+nav#main-nav-container .navbar-toggle {
+  border-radius: 0;
+  border-color: #ffffff;
+}
+
+nav#main-nav-container .navbar-toggle:focus {
+  background: transparent;
+}
+
+nav#main-nav-container .navbar-toggle:hover {
+  background: #ffffff;
+}
+
+nav#main-nav-container .navbar-toggle span.icon-bar {
+  background: #ffffff;
+}
+
+nav#main-nav-container .navbar-toggle:hover span.icon-bar {
+  background: #00be93;
+}

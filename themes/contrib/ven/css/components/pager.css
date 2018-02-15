@@ -1,0 +1,17 @@
+nav.pager {
+    text-align: center;
+}
+
+nav.pager .pager__items .pager__item {
+    display: inline-block;
+}
+
+nav.pager .pager__items .pager__item a {
+    padding: 5px 10px;
+}
+
+nav.pager .pager__items .pager__item a:hover,
+nav.pager .pager__items .pager__item.is-active a {
+    background: #16a085;
+    color: #fefefe;
+}

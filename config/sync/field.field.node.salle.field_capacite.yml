@@ -1,0 +1,33 @@
+uuid: b8fa408c-7c5d-4716-a3a0-962e21bcfb02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capacite
+    - node.type.salle
+    - taxonomy.vocabulary.capacite
+  content:
+    - 'taxonomy_term:capacite:4adf52cd-6055-42cb-8765-f81e77a7c735'
+id: node.salle.field_capacite
+field_name: field_capacite
+entity_type: node
+bundle: salle
+label: Capacité
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 4adf52cd-6055-42cb-8765-f81e77a7c735
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      capacite: capacite
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: capacite
+field_type: entity_reference

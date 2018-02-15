@@ -1,0 +1,28 @@
+/* content layout */
+.main {
+    width : 100%;
+    max-width : 1200px;
+    margin: 20px auto;
+}
+
+.main:before,
+.main:after {
+    content: '';
+    display: table ;
+    clear:both;
+}
+
+.layout-content {
+    width: 75%;
+}
+
+.layout-sidebar {
+    width: 25%;
+}
+
+.layout-content,
+.layout-sidebar {
+    float: right;
+    min-height: 1px;
+    padding: 0 10px;
+}

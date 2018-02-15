@@ -1,0 +1,22 @@
+uuid: ac3c8420-6ff2-4b46-85e8-c8bcaf881280
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bon_voyage
+_core:
+  default_config_hash: q_t8smjGMPfr-IcnHT3-QJzoPg4q1awaQTlaB-QwKok
+id: bon_voyage_content
+theme: bon_voyage
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

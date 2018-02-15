@@ -1,0 +1,21 @@
+uuid: c0131ada-e024-40fa-940f-3698a4fb4bbd
+langcode: en
+status: true
+dependencies: {  }
+id: professeur
+label: Professeur
+weight: 3
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'administer comment types'
+  - 'cancel account'
+  - 'change own username'
+  - 'create article content'
+  - 'create publications content'
+  - 'delete own article content'
+  - 'delete own publications content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'edit own publications content'

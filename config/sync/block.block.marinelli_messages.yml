@@ -1,0 +1,22 @@
+uuid: 33a8b706-3e0a-4076-8184-1cb11c338b29
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - marinelli
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: marinelli_messages
+theme: marinelli
+region: topbar
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 2d96a3a7-c96b-4336-8368-55d305c7a1df
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - restaurant_zymphonies_theme
+_core:
+  default_config_hash: pjtiCXTs-5doBu32f1G-GAtS1ChTCf3l0VnsWo9IwHg
+id: restaurant_zymphonies_theme_breadcrumbs
+theme: restaurant_zymphonies_theme
+region: breadcrumb
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

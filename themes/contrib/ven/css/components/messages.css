@@ -1,0 +1,20 @@
+/* messages */
+.messages {
+    padding: 10px;
+    margin: 10px;
+    border-left: 3px solid #16a085;
+    background: #fefefe;
+}
+
+.messages--status {
+    border-color: #3498db;
+    background: #C5EFF7;
+}
+.messages--warning {
+    border-color: #f1c40f;
+    background: #faffc9;
+}
+.messages--error {
+    border-color: #c0392b;
+    background: #F1A9A0;
+}

@@ -1,0 +1,126 @@
+/* article */
+article {
+    position: relative;
+    margin-bottom: 30px;
+    background: #ffffff;
+}
+
+.article {
+    text-align: center;
+}
+
+.article-body div {
+    padding: 0 15px;
+}
+
+.article-body > div {
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+.article-body code {
+    overflow: auto;
+}
+
+/* article-image */
+article .article-image {
+    max-height: 300px;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 5px solid #1abc9c;
+}
+
+.article-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* article-attributes */
+ul.article-attributes {
+    list-style-type: none;
+    background: #ffffff;
+    display: inline-block;
+    padding: 20px 40px 0;
+    margin: -20px 0 0 0;
+    color: #6e6e6e;
+    font-size: 14px;
+    border-top: 5px solid #1abc9c;
+    box-shadow: #dedede 0px 1px 6px;
+}
+
+ul.article-attributes li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: -9px;
+}
+
+ul.article-attributes li:last-of-type {
+    margin-right: 0;
+}
+
+ul.article-attributes li.comment-count span {
+    margin-left: 5px;
+}
+
+ul.article-attributes li.tags a {
+    text-decoration: none;
+    color: #6e6e6e;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+ul.article-attributes li.tags a:hover {
+    color: #16a085;
+}
+
+/* article-title */
+.article-title h2 a {
+    text-decoration: none;
+    color: #3e3e3e;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* article-links */
+ul.links.inline {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.links.inline li {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.article ul.links.inline li {
+    display: block;
+}
+
+.article ul.links.inline li.comment-comments {
+    display: none;
+}
+
+ul.links.inline li a {
+    text-decoration: none;
+    color: #16a085;
+    font-weight: bold;
+}
+
+ul.links.inline li.node-readmore a {
+    letter-spacing: 0.05em;
+    font-size: 14px;
+}
+
+ul.links.inline {
+    border-top: 1px dashed #16a085;
+    border-bottom: 1px dashed #16a085;
+    margin-bottom: 0;
+}
+
+ul.links.inline li.comment-forbidden {
+    font-size: 12px;
+}

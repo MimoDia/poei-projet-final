@@ -1,0 +1,20 @@
+moyenne.moyennegeneleprofform:
+ title: 'Calcul moyenne'
+ route_name: moyenne.generale.prof.form
+ description: 'Lien de ma page qui se nomne Hello'
+ menu_name: main
+
+
+
+moyenne_generale.form:  
+ title: 'calcul'
+ route_name: moyenne_generale.form
+ description: 'Lien qui affiche la moyenne generale en front office'
+ menu_name: main 
+
+
+ moyenne.noteform:  # Nom de la route qui dans le fichier hello.routing.html.yml
+ title: 'Calcul de moyenne par nombre de devoirs'
+ route_name: moyenne.note.form:
+ description: 'Lien qui affiche la liste des nodes'
+ menu_name: main 

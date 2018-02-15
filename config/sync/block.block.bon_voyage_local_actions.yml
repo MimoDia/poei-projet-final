@@ -1,0 +1,20 @@
+uuid: 1c2a05a0-cf8c-446f-807d-d939a7338da5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bon_voyage
+_core:
+  default_config_hash: 7ZowigynA5gqMLXJrnAf28vACtgKJokRmrQWwQydlE4
+id: bon_voyage_local_actions
+theme: bon_voyage
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

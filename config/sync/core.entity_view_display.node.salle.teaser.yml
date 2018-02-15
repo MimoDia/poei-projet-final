@@ -1,0 +1,18 @@
+uuid: 346e56d6-6d69-4cb7-9922-7f3563fb157d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.salle
+  module:
+    - user
+id: node.salle.teaser
+targetEntityType: node
+bundle: salle
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

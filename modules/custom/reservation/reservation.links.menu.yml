@@ -1,0 +1,5 @@
+# reservation.reservationnode: 
+#   title: reservation
+#   route_name: 'reservation.reservationnodelist'
+#   description: 'reservation page'
+#   menu_name: main

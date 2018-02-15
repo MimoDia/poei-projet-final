@@ -1,0 +1,20 @@
+uuid: 372ce68b-b6ec-46ca-928e-986f2f8b390a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - restaurant_zymphonies_theme
+_core:
+  default_config_hash: rn_oPUp0KdZCmHFQ_f1blqzL6wLOCIsr9RbL_baLPVU
+id: restaurant_zymphonies_theme_local_actions
+theme: restaurant_zymphonies_theme
+region: auto_hidden_block
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

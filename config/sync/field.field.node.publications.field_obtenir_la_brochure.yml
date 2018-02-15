@@ -1,0 +1,27 @@
+uuid: fc488bea-6f13-4c98-8f3a-c7626e0fae79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_obtenir_la_brochure
+    - node.type.publications
+  module:
+    - file
+id: node.publications.field_obtenir_la_brochure
+field_name: field_obtenir_la_brochure
+entity_type: node
+bundle: publications
+label: Brochure
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: pdf
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

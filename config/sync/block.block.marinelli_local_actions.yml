@@ -1,0 +1,20 @@
+uuid: be72c65b-42c5-4914-8b5b-79b68f47ca47
+langcode: en
+status: true
+dependencies:
+  theme:
+    - marinelli
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: marinelli_local_actions
+theme: marinelli
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

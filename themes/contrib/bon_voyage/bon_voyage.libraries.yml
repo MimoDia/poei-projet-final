@@ -1,0 +1,59 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/style.css: {}
+
+bootstrap:
+  remote: http://getbootstrap.com/
+  license:
+    name: MIT
+    gpl-compatible: false
+  js:
+    https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js: { type: external, minified: true }
+  css:
+    theme:
+      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css: {}
+      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css: {}
+  dependencies:
+    - core/jquery
+
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Adamina': { type: external }
+
+to_top:
+  version: VERSION
+  css:
+    component:
+      css/to-top.css: {}
+
+  js:
+    js/to-top.js: {}
+  
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+stick_up:	
+  version: VERSION
+  css:
+    component:
+      css/stick-up.css: {}
+  
+  js:
+    js/stick-up.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+maintenance_page:
+  version: VERSION
+  css:
+    theme:
+      css/maintenance-page.css: {}
+  dependencies:
+    - system/maintenance
+    - bon_voyage/global-styling

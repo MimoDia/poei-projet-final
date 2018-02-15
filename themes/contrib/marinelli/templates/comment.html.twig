@@ -1,0 +1,44 @@
+<div class="{{ classes }} clearfix"{{ attributes }}>
+  {{ picture }}
+
+  <div style="margin-left:{{ image_width }}px;" class="comment-content">
+    {{ title_prefix }}
+
+    {% if title  %}
+      <h3{{ title_attributes }}>
+      {{ title }}
+      {% if new  %}
+        <span class="new">{{ new }}</span>
+      {% endif %}
+      </h3>
+    {% elseif new  %}
+      <div class="new">{{ new }}</div>
+    {% endif %}
+
+    {{ title_suffix }}
+
+    <div class="submitted">
+      {{ permalink }}
+      {{ 'On'|t }}
+      <strong>{{ created }}</strong>
+    </div>
+
+    <div class="comment-text"{{ content_attributes }}>
+      {# // We hide the comments and links now so that we can render them later.
+#}      {{ content|without('links') }}
+      {{ content }}
+        <div class="user-signature clearfix">
+          {{ 'By'|t }} <strong>{{ author }}</strong>
+          {% if signature  %}
+            --
+            {{ signature }}
+          {% endif %}
+        </div>
+    </div>
+
+    {{ content links }}
+
+    <div class="arrow-border"></div><!--make the triangle using css only-->
+    <div class="arrow"></div>
+  </div><!--end comment content-->
+</div> <!-- end comment -->

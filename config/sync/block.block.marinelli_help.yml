@@ -1,0 +1,22 @@
+uuid: 5311f533-5bce-46b0-bc37-2e7491e764c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - marinelli
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: marinelli_help
+theme: marinelli
+region: sidebar_first
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 2985777a-91fa-4ab7-804a-846aa8772198
+langcode: en
+status: true
+dependencies: {  }
+name: 'Revue scientifique'
+vid: revue_scientifique
+description: 'Liste des éditeurs de publication scientifique'
+hierarchy: 0
+weight: 0

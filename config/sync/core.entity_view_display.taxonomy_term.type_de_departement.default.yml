@@ -1,0 +1,45 @@
+uuid: 4f7076b8-2705-4eee-9985-7a7b977bd82b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.type_de_departement.field_biologie
+    - field.field.taxonomy_term.type_de_departement.field_chimie
+    - field.field.taxonomy_term.type_de_departement.field_informatique
+    - taxonomy.vocabulary.type_de_departement
+  module:
+    - text
+id: taxonomy_term.type_de_departement.default
+targetEntityType: taxonomy_term
+bundle: type_de_departement
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_biologie:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_chimie:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_informatique:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

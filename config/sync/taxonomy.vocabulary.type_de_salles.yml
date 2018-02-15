@@ -1,0 +1,9 @@
+uuid: 0d8efaaa-75ee-4728-bd3a-5e4db7fe114c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type de salles'
+vid: type_de_salles
+description: ''
+hierarchy: 0
+weight: 0

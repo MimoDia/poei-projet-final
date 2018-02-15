@@ -1,0 +1,69 @@
+<?php
+
+
+function reservation_user_login($account){
+ //option 1
+drupal_set_message(t('Welcome dear %name!', array('%name' =>$account->getAccountName())));
+  \Drupal::service('cache_tags.invalidator')->invalidateTags(['sessions']);
+}
+
+function reservation_user_logout($account){
+ \Drupal::service('cache_tags.invalidator')->invalidateTags(['sessions']);
+ 
+}
+
+/* 
+    fonction qui rajoute l'id de la salle , le crénau disponible pour la reservation dans
+	la table CrenauxHoraires 
+
+*/
+function reservation_node_insert(Drupal\Core\Entity\EntityInterface $node) {
+	/*kint($node->field_debut_crenaux->getValue('field_debut_crenaux'));
+	die();*/
+  if($node->getType()=='salle'){
+  	$date_start_crenau= strtotime($node->field_debut_crenaux->getString());
+  	$date_end_crenau= strtotime($node->field_date_fin_crenaux->getString());
+
+    db_insert('CrenauxHoraires')
+      ->fields(array(
+      'nid' => $node->id(), 
+      'date_start_crenau' =>$date_start_crenau,
+      'date_end_crenau' => $date_end_crenau,
+    ))
+      ->execute();
+    }
+}
+
+/* 
+    fonction qui rajoute l'id de la salle , le crénau disponible pour la reservation dans
+	la table CrenauxHoraires 
+
+*/
+
+function reservation_node_update(Drupal\Core\Entity\EntityInterface $node) {
+   if($node->getType()=='salle'){
+    	$date_start_crenau= strtotime($node->field_debut_crenaux->getString());
+    	$date_end_crenau= strtotime($node->field_date_fin_crenaux->getString());
+    	db_insert('CrenauxHoraires')
+        ->fields(array(
+        'nid' => $node->id(), 
+        'date_start_crenau' =>$date_start_crenau,
+        'date_end_crenau' => $date_end_crenau,
+      ))
+        ->execute();
+    }
+}
+
+function reservation_theme($existing, $type, $theme, $path) {
+  return array(
+    'reservation_history' => array(
+	      'template' => 'reservation-node-history',
+	      'variables' => array(
+		      'node' => NULL,
+		      'count' => NULL,
+	      ),
+      )
+    );
+    //kint($theme);
+      
+}

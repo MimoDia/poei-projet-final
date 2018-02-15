@@ -1,0 +1,70 @@
+/* responsive layout */
+@media all and (max-width: 980px) and (min-width: 720px) {
+    .layout-content {
+        width: 65%;
+    }
+    .layout-sidebar {
+        width: 35%;
+    }
+    .layout-container > header #block-ven-branding a {
+        font-size: 42px;
+    }
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+@media all and (max-width: 720px) {
+    .layout-content,
+    .layout-sidebar {
+        width: 100%;
+    }
+    .layout-container > header #block-ven-branding a {
+        font-size: 32px;
+    }
+    input,
+    textarea{
+        width: 100%;
+    }
+    .layout-container > header nav,
+    .layout-container > header nav ul li {
+        display: block;
+        text-align: left;
+    }
+    .layout-container > header nav ul li {
+        margin: 10px 0;
+    }
+    .layout-container > header nav {
+        margin-top: 0;
+    }
+    .main-menu {
+        height: 0;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display: inline-block;
+        text-align: left;
+    }
+    /*Pointer on Hover, so that the user knows of an active link*/
+    .show-menu:hover {
+        cursor:pointer;
+    }
+    /*Center the text*/
+    li ul li a {
+        text-align:center;
+    }
+    .layout-container > header nav ul li a:hover {
+        color: #16a085;
+        border: none;
+    }
+    span.comment-permalink {
+        position: relative;
+        padding: 10px 10px 0 0;
+        float: right;
+    }
+    input[type="submit"], .btn {
+        margin-bottom: 5px;
+    }
+}

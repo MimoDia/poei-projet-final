@@ -1,0 +1,28 @@
+moyenne.generale.prof.form: # nomdumodule.nomdelaroute (route name)
+  path: '/moyenne-generale-prof' # node/98/history dans l'url
+  defaults:
+    _title: 'Calcul moyenne générale '
+    _form: '\Drupal\moyenne\Form\MoyenneGeneraleProfForm'
+  requirements:
+    _permission: 'ChefDepartementPermissionCalculatriceformualaire MoyenneGeneraleEtudiant'
+
+
+moyenne_generale.form: # nomdumodule.nomdelaroute (route name)
+  path: '/moyenne-generale' # node/98/history dans l'url
+  defaults:
+    _title: 'Estimation moyenne'
+    _form: '\Drupal\moyenne\Form\MoyenneGeneraleForm'
+  requirements:
+    _access: 'TRUE'
+
+
+moyenne.note.form: # nomdumodule.nomdelaroute (route name)
+  path: '/moyenne-note' # node/98/history dans l'url
+  defaults:
+    _title: 'Calculate notes devoirs '
+    _form: '\Drupal\moyenne\Form\MoyenneNoteForm'
+  requirements:
+    _access: 'TRUE'
+
+
+

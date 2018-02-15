@@ -1,0 +1,18 @@
+uuid: 57a9af87-b0ad-4f58-888e-e30574e1533a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.offre_d_emploi
+  module:
+    - user
+id: node.offre_d_emploi.teaser
+targetEntityType: node
+bundle: offre_d_emploi
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

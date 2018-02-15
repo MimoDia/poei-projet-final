@@ -1,0 +1,70 @@
+uuid: e03f3a02-5c2b-43e5-8a03-f036790032c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publications.field_date_de_publication
+    - field.field.node.publications.field_obtenir_la_brochure
+    - field.field.node.publications.field_resume_de_la_publication
+    - field.field.node.publications.field_revue_scientifique
+    - field.field.node.publications.field_specialite
+    - node.type.publications
+  module:
+    - chosen_field
+    - datetime
+    - file
+    - text
+id: node.publications.default
+targetEntityType: node
+bundle: publications
+mode: default
+content:
+  field_date_de_publication:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_obtenir_la_brochure:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_resume_de_la_publication:
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_revue_scientifique:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: chosen_select
+    region: content
+  field_specialite:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: chosen_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

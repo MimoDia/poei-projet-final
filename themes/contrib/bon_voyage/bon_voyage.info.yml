@@ -1,0 +1,36 @@
+name: Bon Voyage
+description: Bon Voyage is a beautifully designed Drupal 8 Theme best suited for travel agencies, hotels, spas, and other travel-related online resources.
+type: theme
+base theme: classy
+# core: 8.x
+
+libraries:
+  - bon_voyage/bootstrap
+  - bon_voyage/fonts
+  - bon_voyage/font-awesome
+  - bon_voyage/global-styling
+
+regions:
+  header: Header
+  user_menu: User menu
+  top_navbar_row_2:	Top Navbar Row 2
+  primary_menu: Primary menu
+  search: Search
+  header_bottom: Header Bottom
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: Sidebar first
+  sidebar_second: Sidebar second
+  featured: Featured
+  featured_2: Featured 2
+  featured_3: Featured 3
+  featured_4: Featured 4
+  footer_top: Footer Top
+  footer: Footer
+
+# Information added by Drupal.org packaging script on 2016-12-01
+version: '8.x-1.0'
+core: '8.x'
+project: 'bon_voyage'
+datestamp: 1480577586

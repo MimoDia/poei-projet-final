@@ -1,0 +1,19 @@
+uuid: a0e62013-ada2-4acd-8c40-c257f11f9403
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_description_salle
+field_name: field_description_salle
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

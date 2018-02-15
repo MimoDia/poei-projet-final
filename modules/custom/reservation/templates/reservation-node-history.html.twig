@@ -1,0 +1,13 @@
+ {% if count != NULL %}
+	<div>
+		 <span>
+		   {% trans %}
+		     The node {{ node.label }} has been updated {{ count }} time(s) (TEMPLATE).
+		   {% endtrans %}
+		 </span>
+	</div>
+{% else %}
+	<span>
+		the node is not updated
+	</span>
+{% endif %}

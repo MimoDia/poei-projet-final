@@ -1,0 +1,7 @@
+# node.add_page: 
+#   title: reservation
+#   route_name: reservation.reservation_form
+#   node_type: 'node/{node}'
+#   appears_on: 
+#     - entity.node.canonical
+#   weight: -50

@@ -1,0 +1,12 @@
+# reservation.reservation: 
+#   title: Hi
+#   route_name: reservation.reservation
+#   base_route: reservation.reservation
+#   weight: 1
+
+reservation.reservationnodehistory: 
+  title: Reservation History of room
+  route_name: reservation.history
+  base_route: entity.node.canonical
+  weight: 2
+

@@ -1,0 +1,9 @@
+uuid: f0a233d0-085a-434d-9274-bf03777aa744
+langcode: en
+status: true
+dependencies: {  }
+name: Capacité
+vid: capacite
+description: ''
+hierarchy: 0
+weight: 0

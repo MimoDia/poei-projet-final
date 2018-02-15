@@ -1,0 +1,6 @@
+moyenne:
+  version: VERSION
+  css:
+    theme:
+      css/moyenne.module.css: {}
+     

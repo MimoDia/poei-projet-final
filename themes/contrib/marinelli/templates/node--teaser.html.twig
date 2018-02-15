@@ -1,0 +1,50 @@
+{#
+/**
+ * node teaser template
+ * if you want to use custom teaser templates based on node types
+ * just copy this file and rename it
+ * for example: node--page--teaser.tpl.php for page teasers
+ */#}
+
+
+<div class="teaser-container {{ classes }}"{{ attributes }}>
+	<div class="teaser-content">
+		<h2 class="teaser-title">
+		{# PHP: print l($title, 'node/'.$nid, array('html'=>TRUE)); #}
+		   {{ title_prefix }}
+    {% if not page %}
+      <h2{{ title_attributes.addClass('node__title') }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
+		{% if sticky  %}
+			<span class="teaser-sticky">{# PHP: print t($sticky_text); #}</span>
+		{% endif %}
+		</h2>
+		{% if display_submitted  %}
+			<div class="teaser-created">
+
+   {% if node.created.value or node.changed.value is defined %}
+  {% set node_pub = date(node.created.value) %}
+  {% set node_upd = node.changed.value|format_date() %}
+				<div class="teaser-created-month">
+					{{ node_pub|date('M') }}
+				</div>
+				<div class="teaser-created-day">
+					{{ node_pub|date('d') }}
+				</div>
+			{% endif %}
+			</div>
+		{% endif %}
+			<div class="teaser-text">
+		{{ content }}
+      		</div>
+	</div>
+  <div class="teaser-meta">
+  {% if display_submitted  %}
+    <strong class="teaser-author">{{ 'Posted By'|t }}</strong> {{ author_name }}
+  {% endif %}
+    <span class="teaser-readmore">{# PHP: print l(t('read more'), 'node/' . $nid, array('attributes' => array('class' => t('node-readmore-link')))); #}</span>
+  </div>
+</div>

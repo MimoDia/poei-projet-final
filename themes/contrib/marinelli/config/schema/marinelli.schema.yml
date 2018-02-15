@@ -1,0 +1,5 @@
+# Schema for the configuration files of the marinelli theme.
+
+cts_demo.settings:
+  type: theme_settings
+  label: 'Marinelli Theme Setting'

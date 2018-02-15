@@ -1,0 +1,22 @@
+uuid: 8a0c3978-be82-4e7a-bf46-1b7183fc1793
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bon_voyage
+_core:
+  default_config_hash: 0xPp419Evr0LK6kmyKWQgE7CPrZZ-X0GtaeRIPYN0dc
+id: bon_voyage_breadcrumbs
+theme: bon_voyage
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 1ec023f8-8d5c-43e8-b707-0e01ee566162
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume_de_la_publication
+    - node.type.publications
+  module:
+    - text
+id: node.publications.field_resume_de_la_publication
+field_name: field_resume_de_la_publication
+entity_type: node
+bundle: publications
+label: 'Résumé de la publication'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

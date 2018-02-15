@@ -1,0 +1,27 @@
+/* responsive menu */
+.show-menu {
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    display: none;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+/*Hide checkbox*/
+input[type=checkbox] {
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ .main-menu {
+    display: block;
+    height: auto;
+    transform: none;
+    transition: all 0.3s;
+}
+input[type=checkbox]:checked ~ .show-menu {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+input[type=checkbox]:checked ~ .show-menu .fa {
+    color: #6e6e6e;
+}

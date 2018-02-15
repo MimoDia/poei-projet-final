@@ -1,0 +1,22 @@
+uuid: e03e12d8-1d40-43f0-961d-8aad5a94d137
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ven
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: ven_help
+theme: ven
+region: header
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: d4372541-d717-4154-a411-dc4177d3b0d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_biologie
+    - taxonomy.vocabulary.type_de_departement
+  module:
+    - text
+id: taxonomy_term.type_de_departement.field_biologie
+field_name: field_biologie
+entity_type: taxonomy_term
+bundle: type_de_departement
+label: Biologie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

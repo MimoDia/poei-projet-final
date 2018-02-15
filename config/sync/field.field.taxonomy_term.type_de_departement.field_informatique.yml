@@ -1,0 +1,21 @@
+uuid: 3e37b9a0-b2ae-4981-a2fc-00a5ac1cbbd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_informatique
+    - taxonomy.vocabulary.type_de_departement
+  module:
+    - text
+id: taxonomy_term.type_de_departement.field_informatique
+field_name: field_informatique
+entity_type: taxonomy_term
+bundle: type_de_departement
+label: Informatique
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

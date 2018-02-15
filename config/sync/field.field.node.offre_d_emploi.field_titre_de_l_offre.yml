@@ -1,0 +1,19 @@
+uuid: 6fd12d95-0696-46e2-ae2c-2286c9c485b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titre_de_l_offre
+    - node.type.offre_d_emploi
+id: node.offre_d_emploi.field_titre_de_l_offre
+field_name: field_titre_de_l_offre
+entity_type: node
+bundle: offre_d_emploi
+label: 'Titre de l''offre'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

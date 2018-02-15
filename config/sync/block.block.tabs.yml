@@ -1,0 +1,22 @@
+uuid: 279ed2af-e054-45bb-9587-f42b6370874a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bon_voyage
+_core:
+  default_config_hash: 2nA2z6Orf72yjGM-UHhhnMsmdeBhFMu5_tAZo1nuZfs
+id: tabs
+theme: bon_voyage
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

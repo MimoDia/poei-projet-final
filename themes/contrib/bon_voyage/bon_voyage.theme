@@ -1,0 +1,109 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function bon_voyage_preprocess_page(&$variables) {
+  if (theme_get_setting('to_top_display')) {
+    $variables['to_top_display'] = TRUE;
+    $variables['#attached']['library'][] = 'bon_voyage/to_top';
+  }
+  if (theme_get_setting('use_stick_up_menu')) {
+    $variables['use_stick_up_menu'] = TRUE;
+    $variables['#attached']['library'][] = 'bon_voyage/stick_up';
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function bon_voyage_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['bon_voyage_settings'] = array(
+    '#type' => 'details',
+    '#title' => t('Bon voyage settings'),
+    '#collapsible' => FALSE,
+    '#collapsed' => FALSE,
+  );
+
+  $form['bon_voyage_settings']['to_top'] = array(
+    '#type' => 'details',
+    '#title' => t('Show to top button'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  $form['bon_voyage_settings']['to_top']['to_top_display'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Show To Top button'),
+    '#default_value' => theme_get_setting('to_top_display'),
+    '#description'   => t("Check this option to show to top button."),
+  );
+
+  $form['bon_voyage_settings']['stick_up'] = array(
+    '#type' => 'details',
+    '#title' => t('Use Stick Up menu'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  $form['bon_voyage_settings']['stick_up']['use_stick_up_menu'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use Stick Up menu'),
+    '#default_value' => theme_get_setting('use_stick_up_menu'),
+    '#description'   => t("Check this option to use stick up menu."),
+  );
+
+  $form['bon_voyage_settings']['breadcrumb'] = array(
+    '#type' => 'details',
+    '#title' => t('Breadcrumb settings'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+
+  // Breadcrumb elements.
+  $form['bon_voyage_settings']['breadcrumb']['show_breadcrumb_title'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Append the content title to the end of the breadcrumb'),
+    '#default_value' => theme_get_setting('show_breadcrumb_title'),
+    '#description' => t('Useful when the breadcrumb is not placed just before the title.'),
+  );
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for maintenance-page.html.twig.
+ */
+function bon_voyage_preprocess_maintenance_page(&$variables) {
+  if (!$variables['db_is_active']) {
+    $variables['site_name'] = '';
+  }
+
+  $variables['#attached']['library'][] = 'bon_voyage/maintenance_page';
+
+}
+
+/**
+ * Implements preprocess_breadcrumb().
+ */
+function bon_voyage_preprocess_breadcrumb(&$variables) {
+  $breadcrumb = &$variables['breadcrumb'];
+
+  if (theme_get_setting('show_breadcrumb_title') && !empty($breadcrumb)) {
+    $request = \Drupal::request();
+    $route_match = \Drupal::routeMatch();
+    $page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+
+    if (!empty($page_title)) {
+      $breadcrumb[] = array(
+        'text' => $page_title,
+        'attributes' => new Attribute(array('class' => array('active'))),
+      );
+    }
+  }
+}

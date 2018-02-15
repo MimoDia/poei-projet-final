@@ -1,0 +1,14 @@
+uuid: 210098e0-db2f-4e17-a8f7-7ed093d3db83
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.chef_departement
+  module:
+    - user
+id: user_add_role_action.chef_departement
+label: 'Add the Chef département role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: chef_departement
